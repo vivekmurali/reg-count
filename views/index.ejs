@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .wrap{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #count{
+            font-size: 48px;
+        }
+
+        @media screen and (max-width: 768px){
+            #title{
+                font-size: 36px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap"><h1 id="title">HACK4CAUSE REGISTRATION COUNT:</h1>
+    <h2 id="count"><%=count %></h2></div>
+    
+</body>
+</html>
