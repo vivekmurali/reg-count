@@ -29,8 +29,8 @@ app.use(bodyParser.urlencoded({
 app.get('/',(req,res)=>{
     DB.collection('registration').countDocuments().then((count)=>{
         console.log(count);
+        count+=700
         res.render('index.ejs',{count:count});
     });
 });
-
 app.listen(port);
